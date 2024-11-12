@@ -1,0 +1,30 @@
+.row {
+    /* height: calc(100vh - 4rem); */
+    /* background-color: red; */
+}
+
+
+.content {
+    padding: 25px;
+}
+
+/* .sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4.5rem;
+    height: calc(100vh - 4.5rem);
+    overflow-y: auto;
+} */
+
+.content {
+    padding: 25px;
+}
+
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4.5rem;
+    height: calc(100vh - 4.5rem);
+    overflow-y: auto;
+}
+

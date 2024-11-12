@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+$body-bg: #FFF;
+$theme-colors: (
+  "primary": #7952b3,
+);
+
+$grid-gutter-width: 2rem !default;
+
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+
+body {
+    font-size: 1rem;
+}

@@ -1,0 +1,20 @@
+<div class="py-2 px-0">
+  <input type="text" placeholder="filter" class="form-control">
+</div>
+
+<div class="menu">
+  <div *ngFor="let item of items" class="item">
+    <a class="text-primary" [routerLink]="item.url">
+      <h6 class="mb-0"> {{item.title}}</h6>
+    </a>
+    <ul>
+      <li *ngFor="let child of item.children">
+        <a [routerLink]="child.url" class="text-body"
+           [routerLinkActive]="child.url ? 'font-weight-bold text-primary' : ''">
+          {{child.title}}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div>

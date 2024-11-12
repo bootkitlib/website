@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { Title } from '@angular/platform-browser';
+import { AppCommonModule } from '@libs/common';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [
+    AppCommonModule,
+  ]
 })
 export class AppComponent {
-  title = 'bootkit-website';
+  constructor() {
+  }
 }

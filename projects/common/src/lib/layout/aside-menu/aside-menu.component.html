@@ -1,0 +1,48 @@
+<div class="sidebar-start">
+    <!-- <div class="menu-header d-flex align-items-center ps-4">
+        <img src="/assets/images/app-logo.svg" alt="app-logo">
+        <h3 class="app-title">اعتبارات</h3>
+    </div> -->
+
+    <ng-container *ngIf="config?.sidebar?.menuItems">
+        <ng-container *ngTemplateOutlet="menuTemplate; context: {$implicit: config?.sidebar?.menuItems}">
+        </ng-container>
+    </ng-container>
+</div>
+
+<div class="sidebar-end">
+    <!-- <hr class="divider-menu-item m-0"> -->
+    <ng-container *ngIf="config?.sidebar?.footerMenuItems">
+        <ng-container *ngTemplateOutlet="menuTemplate; context: {$implicit: config?.sidebar?.footerMenuItems}">
+        </ng-container>
+    </ng-container>
+
+    <div class="alert alert-warning alert-dismissible fade show m-0 ps-4" role="alert">
+        نسخه
+        <strong>1.0.0</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+</div>
+
+<ng-template #menuTemplate let-menuItems>
+    <ul class="menu">
+        <ng-container *ngFor="let item of menuItems">
+            <ng-container>
+                <li *ngIf="isTextMenuItem(item)" (click)="item.routerLink ? '' : onMenuItemClick($any(item), $event)"
+                    class="text-menu-item" [class.text-menu-item-link]="item.routerLink != null">
+                    <a [routerLink]="$any(item).routerLink" routerLinkActive="active" class="cursor-pointer">
+                        <div class="icon-container">
+                            <span *ngIf="item.icon" class="menu-item-icon"
+                                  [ngClass]="getTextMenuItemIconClass(item)"></span>
+                        </div>
+
+                        {{$any(item).text}}
+                    </a>
+                </li>
+                <li *ngIf="isDividerMenuItem(item)">
+                    <hr class="divider-menu-item">
+                </li>
+            </ng-container>
+        </ng-container>
+    </ul>
+</ng-template>

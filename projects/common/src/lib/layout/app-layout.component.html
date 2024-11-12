@@ -1,0 +1,17 @@
+<app-layout-app-bar [compactView]="_smallDevice"
+                    [config]="config"
+                    (humburgerClick)="humburgerClick.emit()">
+</app-layout-app-bar>
+
+<!-- <app-layout-aside-menu [config]="config"></app-layout-aside-menu> -->
+
+<main class="p-4">
+  <ng-content></ng-content>
+</main>
+
+
+<!-- <ng-container *ngIf="_waiting$ | async as w">
+  <div *ngIf="w.show" class="wait-overlay">
+    <h4 style="color: #d6d8ff; padding-top: 2rem;">{{w.text}}</h4>
+  </div>
+</ng-container> -->
