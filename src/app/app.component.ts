@@ -3,6 +3,9 @@ import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { Title } from '@angular/platform-browser';
 import { AppCommonModule } from '@libs/common';
+import { CodeFormatterService } from '@bootkit/angular-pro/components/code';
+
+
 
 @Component({
   selector: 'app-root',
@@ -14,6 +17,6 @@ import { AppCommonModule } from '@libs/common';
   ]
 })
 export class AppComponent {
-  constructor() {
+  constructor(cc: CodeFormatterService) {
   }
 }
