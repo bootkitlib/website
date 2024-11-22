@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angular/core';
+import { Component, EventEmitter, Input, Output, signal, ViewEncapsulation } from '@angular/core';
 // import { WorkspaceLayout1Configuration } from '../types';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DividerMenuItem, MenuItem, TextMenuItem } from '@js-sugar/angular';
@@ -13,6 +13,7 @@ export class AppLayoutAppBarComponent {
   @Input() config?: WorkspaceLayout1Configuration;
   @Input() compactView = true;
   @Output() humburgerClick = new EventEmitter();
+  protected collapsed = signal(false);
   // _userDisplayText$: Observable<string>;
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
