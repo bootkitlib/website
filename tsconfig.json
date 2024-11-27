@@ -3,9 +3,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "paths": {
-      "@libs/common": [
-        "./projects/common/src/public-api.ts"
+      "@app/common": [
+        "src/app/common/index.ts"
       ]
     },
     "outDir": "./dist/out-tsc",

@@ -1,4 +1,4 @@
-interface SidebarItem {
+export  interface SidebarItem {
   title: string;
   url?: Array<string>;
   children?: SidebarItem[];

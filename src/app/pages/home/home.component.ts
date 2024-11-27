@@ -11,7 +11,7 @@ export class HomeComponent {
     private title: Title,
     private meta: Meta,
     ) {
-    title.setTitle('Light UI - Bootstrap-Based Angular Component Library and Infrastructure');
-    meta.updateTag({name: 'description', content: 'LightUI is a Bootstrap-based UI library for developing Angular projects.' });
+    title.setTitle('Angular BootKit - Angular + Bootstrap mixture');
+    meta.updateTag({name: 'description', content: 'BootKit is a Bootstrap-based, Lightweight and pure Angular Component|Infrastructure library.' });
   }
 }

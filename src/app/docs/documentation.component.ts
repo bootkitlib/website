@@ -1,10 +1,15 @@
 import { Component, AfterContentInit } from '@angular/core';
+import { DocumentationLayoutComponent } from '../common/documentation-layout/documentation-layout.component';
+import { AppCommonModule } from '@app/common';
 
 @Component({
   selector: 'app-documentation',
   templateUrl: './documentation.component.html',
-  styleUrls: ['./documentation.component.css'],
-  providers: []
+  standalone: true,
+  imports: [
+    AppCommonModule,
+    DocumentationLayoutComponent
+  ]
 })
 export class DocumentationComponent implements AfterContentInit {
   constructor() {

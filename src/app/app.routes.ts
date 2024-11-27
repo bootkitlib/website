@@ -8,6 +8,6 @@ export const routes: Routes = [
       },
       {
         path: 'docs',
-        loadChildren: () => import('./docs/documentation.module').then(x => x.DocumentationModule)
+        loadChildren: () => import('./docs/routes')
       },
 ];

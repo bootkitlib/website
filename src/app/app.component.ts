@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
-import { Title } from '@angular/platform-browser';
-import { AppCommonModule } from '@libs/common';
 import { CodeFormatterService } from '@bootkit/angular-pro/components/code';
+import { AppLayoutModule } from './common/app-layout';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +12,9 @@ import { CodeFormatterService } from '@bootkit/angular-pro/components/code';
   styleUrls: ['./app.component.css'],
   standalone: true,
   imports: [
-    AppCommonModule,
+    CommonModule,
+    RouterModule,
+    AppLayoutModule,
   ]
 })
 export class AppComponent {
