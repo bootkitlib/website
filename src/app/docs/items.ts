@@ -1,66 +1,26 @@
-export  interface SidebarItem {
-  title: string;
-  url?: Array<string>;
-  children?: SidebarItem[];
-}
+import { MenuItem } from "../common/types";
 
-export const SIDEBAR_ITEMS: SidebarItem[] = [
+export const SIDEBAR_ITEMS: MenuItem[] = [
   {
     title: 'Getting Started',
-    url: ['getting-started', 'introduction'],
     children: [
       {
         title: 'Introduction',
-        url: ['getting-started', 'introduction'],
+        url: ['bootkit', 'getting-started', 'introduction'],
+      },
+      {
+        title: 'RTL',
+        url: ['bootkit', 'getting-started', 'rtl'],
       },
     ]
   },
-  // {
-  //   title: '@ui-sugar/angular',
-  //   url: ['components', 'badge'],
-  //   children: [
-  //     {
-  //       title: 'Installation',
-  //       url: ['angular-package', 'installation'],
-  //     },
-  //     {
-  //       title: 'Code',
-  //       url: ['angular-package', 'code'],
-  //     },
-  //   ]
-  // },
-  // {
-  //   title: '@ui-sugar/angular-bootstrap (soon)',
-  //   // url: ['more', 'change-log'],
-  //   // children: [
-  //   //   {
-  //   //     title: '(comming soon)',
-  //   //     url: ['more', 'change-log'],
-  //   //   },
-  //   // ]
-  // },
-
-  // {
-  //   title: 'Material Extensions (soon)',
-  //   // url: ['more', 'change-log'],
-  //   // children: [
-  //   //   {
-  //   //     title: '(comming soon)',
-  //   //     url: ['more', 'change-log'],
-  //   //   },
-  //   // ]
-  // },
-
-  // {
-  //   title: 'Kendo Extensions (soon)',
-  //   // url: ['more', 'change-log'],
-  //   // children: [
-  //   //   {
-  //   //     title: '(comming soon)',
-  //   //     url: ['more', 'change-log'],
-  //   //   },
-  //   // ]
-  // },
-
-
+  {
+    title: 'Components',
+    children: [
+      {
+        title: 'Tabs',
+        url: ['bootkit', 'components', 'tabs'],
+      },
+    ]
+  },
 ];

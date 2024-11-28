@@ -1,5 +1,5 @@
-<ul class="list-unstyled mt-0">
-  <ng-container *ngFor="let sec of _sections">
+<ul class="list-unstyled mt-0" *ngIf="document()">
+  <ng-container *ngFor="let sec of document()?.sections">
     <li *ngIf="sec.header">
       <a [routerLink]="[]" [fragment]="sec.id" class="text-body">{{sec.header}}</a>
 

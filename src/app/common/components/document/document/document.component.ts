@@ -1,19 +1,20 @@
-import { Component, Input, ContentChildren, QueryList, AfterContentInit } from '@angular/core';
+import { Component, Input, ContentChildren, QueryList, AfterContentInit, input, OnInit } from '@angular/core';
 import { DocumentSectionComponent } from '../document-section/document-section.component';
+import { DocumentService } from '../document.service';
 
 @Component({
   selector: 'app-doc',
   templateUrl: './document.component.html',
   styleUrls: ['./document.component.css']
 })
-export class DocumentComponent {
-  @Input() header!: string;
-  @ContentChildren(DocumentSectionComponent) private _sectionsQuery!: QueryList<DocumentSectionComponent>;
-  private _sections: DocumentSectionComponent[] = [];
+export class DocumentComponent  implements AfterContentInit  {
+  header = input<string>();
+  @ContentChildren(DocumentSectionComponent) public sections?: QueryList<DocumentSectionComponent>;
 
-  getSections() {
-    return this._sectionsQuery.toArray();
+  constructor(private documentService: DocumentService) {
   }
 
-  constructor() { }
+  ngAfterContentInit() {
+    this.documentService.document.set(this);
+  }
 }
