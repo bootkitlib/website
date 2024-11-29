@@ -20,8 +20,8 @@
       <div class="col-md-9">
         <router-outlet></router-outlet>
       </div>
-      <div class="col-md-3 position-relative">
-        <app-document-toc class="position-absolute" [document]="documentService.document()"></app-document-toc>
+      <div class="col-md-3">
+        <app-document-toc  [document]="documentService.document()"></app-document-toc>
       </div>
     </div>
   </div>
