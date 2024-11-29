@@ -1,9 +1,5 @@
 <div class="row">
   <div class="d-none d-sm-block col-md-2 sidebar border-right">
-    <div class="py-2 px-0">
-      <input type="text" placeholder="filter" class="form-control">
-    </div>
-
     <div class="menu">
       <div *ngFor="let item of SIDEBAR_ITEMS" class="item">
         <h6 class="text-primary mb-0"> {{item.title}}</h6>
@@ -24,8 +20,8 @@
       <div class="col-md-9">
         <router-outlet></router-outlet>
       </div>
-      <div class="col-md-3">
-        <app-document-toc [document]="documentService.document()"></app-document-toc>
+      <div class="col-md-3 position-relative">
+        <app-document-toc class="position-absolute" [document]="documentService.document()"></app-document-toc>
       </div>
     </div>
   </div>

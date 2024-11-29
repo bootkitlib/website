@@ -1,5 +1,5 @@
 import { BreakpointObserver } from '@angular/cdk/layout';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, signal } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { WaitingDescriptor, WorkspaceLayout1Configuration as AppLayoutConfiguration } from './types';
 import { WorkspaceLayout1Service } from './app-layout.service';
@@ -13,7 +13,9 @@ import { WorkspaceLayout1Service } from './app-layout.service';
 export class AppLayoutComponent {
   @Input() config?: AppLayoutConfiguration;
   @Output() humburgerClick = new EventEmitter<any>();
-
+  @Input() compactView = true;
+  protected collapsed = signal(false);
+  // _userDisplayText$: Observable<string>;
   
   _smallDevice = false;
   // _waiting$: Observable<WaitingDescriptor>;
