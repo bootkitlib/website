@@ -9,6 +9,10 @@ export default [
         loadChildren: () => import('./getting-started/introduction/routes')
       },
       {
+        path: 'installation',
+        loadChildren: () => import('./getting-started/install/routes')
+      },
+      {
         path: 'rtl',
         loadChildren: () => import('./getting-started/rtl/routes')
       },

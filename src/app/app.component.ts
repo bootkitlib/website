@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
-import { CodeFormatterService } from '@bootkit/angular-pro/components/code';
 import { AppLayoutModule } from './common/app-layout';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
+import hljs from 'highlight.js/lib/core';
+import xmlLanguage from 'highlight.js/lib/languages/xml';
+import { addCodeFormatter } from '@bootkit/angular-pro/components/code';
+hljs.registerLanguage('xml', xmlLanguage);
+addCodeFormatter('html', code => hljs.highlight(code, { language: 'xml' }).value);
 
 
 @Component({
@@ -18,6 +22,6 @@ import { RouterModule } from '@angular/router';
   ]
 })
 export class AppComponent {
-  constructor(cc: CodeFormatterService) {
+  constructor() {
   }
 }

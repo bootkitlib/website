@@ -9,6 +9,10 @@ export const SIDEBAR_ITEMS: MenuItem[] = [
         url: ['bootkit', 'getting-started', 'introduction'],
       },
       {
+        title: 'Install',
+        url: ['bootkit', 'getting-started', 'installation'],
+      },      
+      {
         title: 'RTL',
         url: ['bootkit', 'getting-started', 'rtl'],
       },

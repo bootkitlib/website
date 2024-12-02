@@ -23,6 +23,7 @@
     "@bootkit/angular": "^1.2.0",
     "@bootkit/angular-pro": "^1.0.0-alpha.1",
     "bootstrap": "^5.3.3",
+    "highlight.js": "^11.10.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
