@@ -1,13 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 $body-bg: #FFF;
-$theme-colors: (
-  "primary": #7952b3,
-);
+// $theme-colors: (
+//   "primary": #7952b3,
+// );
 
 $grid-gutter-width: 2rem !default;
 
 // Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 
 body {

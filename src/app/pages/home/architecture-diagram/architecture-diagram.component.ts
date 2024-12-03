@@ -6,6 +6,41 @@ import { Component } from '@angular/core';
   styleUrls: ['./architecture-diagram.component.scss']
 })
 export class ArchitectureDiagramComponent {
+  bootstrapComponents = [
+    { name: 'Tab', url: 'tab' },
+    { name: 'Code', url: 'code' },
+    { name: 'Accordion', url: 'Accordion' },
+    { name: 'Alerts', url: 'Alerts' },
+    { name: 'Badge', url: 'Badge' },
+    { name: 'Breadcrumb', url: 'Breadcrumb' },
+    { name: 'Buttons', url: 'Buttons' },
+    { name: 'Button group', url: 'Buttongroup' },
+    { name: 'Card', url: 'Card' },
+    { name: 'Carousel', url: 'Carousel' },
+    { name: 'Collapse', url: 'Collapse' },
+    { name: 'Dropdowns', url: 'Dropdowns' },
+    { name: 'List group', url: 'List-group' },
+    { name: 'Modal', url: 'Modal' },
+    { name: 'Offcanvas', url: 'Offcanvas' },
+    { name: 'Pagination', url: 'Pagination' },
+    { name: 'Placeholders', url: 'Placeholders' },
+    { name: 'Popover', url: 'popover' },
+    { name: 'Spinners', url: 'Spinners' },
+    { name: 'Toasts', url: 'Toasts' },
+    { name: 'Tooltip', url: 'tooltip' },
+  ];
+
+  uiInfra = [
+    {title: 'Validation', url: ''},
+    {title: 'Localization', url: ''},
+    {title: 'Security', url: ''},
+    {title: 'Animation Helpers', url: ''},
+    {title: 'Components', url: ''},
+    {title: 'Animation Helpers', url: ''},
+    {title: 'Responsiveness', url: ''},
+  ];
+
+
   constructor() {
   }
 }
