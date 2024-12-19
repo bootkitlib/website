@@ -22,9 +22,39 @@ export default [
     path: 'components',
     children: [
       {
+        path: 'accordion',
+        loadChildren: () => import('./components/accordion/routes')
+      },
+
+      {
+        path: 'card',
+        loadChildren: () => import('./components/card/routes')
+      },
+      {
+        path: 'collapse',
+        loadChildren: () => import('./components/collapse/routes')
+      },
+      {
+        path: 'dropdown',
+        loadChildren: () => import('./components/dropdown/routes')
+      },
+      {
+        path: 'modal',
+        loadChildren: () => import('./components/modal/routes')
+      },
+      {
+        path: 'popover',
+        loadChildren: () => import('./components/popover/routes')
+      },
+      {
         path: 'tabs',
         loadChildren: () => import('./components/tabs/routes')
       },
+      {
+        path: 'tooltip',
+        loadChildren: () => import('./components/tooltip/routes')
+      },
+      
     ]
   },
 

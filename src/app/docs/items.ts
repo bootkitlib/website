@@ -22,8 +22,36 @@ export const SIDEBAR_ITEMS: MenuItem[] = [
     title: 'Components',
     children: [
       {
+        title: 'Accordion',
+        url: ['bootkit', 'components', 'accordion'],
+      },         
+      {
+        title: 'Card',
+        url: ['bootkit', 'components', 'card'],
+      },
+      {
+        title: 'Collapse',
+        url: ['bootkit', 'components', 'collapse'],
+      },
+      {
+        title: 'Dropdown',
+        url: ['bootkit', 'components', 'dropdown'],
+      },
+      {
+        title: 'Modal',
+        url: ['bootkit', 'components', 'modal'],
+      },
+      {
+        title: 'Popover',
+        url: ['bootkit', 'components', 'popover'],
+      },
+      {
         title: 'Tabs',
         url: ['bootkit', 'components', 'tabs'],
+      },
+      {
+        title: 'Tooltip',
+        url: ['bootkit', 'components', 'tooltip'],
       },
     ]
   },
