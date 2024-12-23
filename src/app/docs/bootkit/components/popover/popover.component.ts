@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { AppCommonModule } from '@app/common';
 import { PopoverDirective } from '@bootkit/angular/components/popover';
 
 @Component({
@@ -8,7 +9,7 @@ import { PopoverDirective } from '@bootkit/angular/components/popover';
     styleUrls: ['./popover.component.css'],
     standalone: true,
     imports: [
-        CommonModule,
+        AppCommonModule,
         PopoverDirective
     ]
 })

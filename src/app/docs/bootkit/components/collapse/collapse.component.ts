@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppCommonModule } from '@app/common';
 import { CollapseModule } from '@bootkit/angular/components/collapse';
 
 @Component({
@@ -6,6 +7,7 @@ import { CollapseModule } from '@bootkit/angular/components/collapse';
     templateUrl: './collapse.component.html',
     standalone: true,
     imports: [
+        AppCommonModule,
         CollapseModule
     ]
 })

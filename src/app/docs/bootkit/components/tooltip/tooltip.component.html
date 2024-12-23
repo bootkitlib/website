@@ -1,40 +1,28 @@
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
+<app-doc header="Tooltip">
 
-<button class="btn btn-secondary me-2" bkTooltip="tooltip" placement="top" disabled>Button</button>
-<button class="btn btn-secondary me-2" bkTooltip="tooltip" placement="top">top</button>
-<button class="btn btn-secondary me-2" [bkTooltip]="'tooltip'" placement="bottom">bottom</button>
-<button class="btn btn-secondary me-2" [bkTooltip]="'tooltip'" placement="start">start</button>
-<button class="btn btn-secondary me-2" [bkTooltip]="'tooltip'" placement="end">end</button>
+    <app-example-viewer header="Simple usage" [codes]="examples.simple" >
 
-
-<button class="btn btn-secondary me-2"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top" >JS based</button>
-
-<ng-template #t>
-    <button class="btn btn-primary">Tooltip</button>
-</ng-template>
+        <!-- <button class="btn btn-secondary me-2" bkTooltip="tooltip" placement="top" disabled>Button</button> -->
+        <button class="btn btn-secondary me-2" bkTooltip="tooltip" placement="top">Tooltip on top</button>
+        <button class="btn btn-secondary me-2" bkTooltip="tooltip" placement="bottom">Tooltip on bottom</button>
+        <button class="btn btn-secondary me-2" bkTooltip="tooltip" placement="start">Tooltip on start</button>
+        <button class="btn btn-secondary me-2" bkTooltip="tooltip" placement="end">Tooltip on end</button>
+ 
+    </app-example-viewer>
 
 
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
-<h1>Heading</h1>
+
+    <app-doc-section id="section" header="CSS">
+        Add the CSS of Bootstrap to your project.
+    </app-doc-section>
+
+
+
+    <button class="btn btn-secondary me-2" data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-title="Tooltip on top">JS based</button>
+
+    <ng-template #t>
+        <button class="btn btn-primary">Tooltip</button>
+    </ng-template>
+
+</app-doc>

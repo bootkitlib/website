@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card-header bg-transparent border-0 d-flex align-items-center">
+    <span class="fw-semibold text-secondary">{{header()}}</span>
+
+    <div class="ms-auto ">
+      <button class="btn bg-light" bkTooltip="View Code" (click)="showCode.set(!showCode())">
+        <i class="bi bi-code-slash  "></i>
+      </button>
+
+    </div>
+  </div>
+  <div class="card-body">
+    <ng-content></ng-content>
+  </div>
+ 
+  @for (item of codes(); track $index) {
+  <div class="card-footer  bg-transparent " [class.d-none]="!showCode()">
+    <div class="d-flex mb-3 align-items-center">
+      <span class="py-1 px-2 border rounded border-danger text-bg-danger me-1 fw-semibold">{{item.title}}</span>
+
+      <button class="btn btn-light ms-auto" bkTooltip="Copy to clipboard" >
+        <i class="bi bi-clipboard "></i>
+      </button>
+    </div>
+
+    <bkp-code [formatter]="item.formatter" [code]="item.code"></bkp-code>
+  </div>
+  }
+</div>

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { DocumentModule } from './components/document';
 import { CodeComponent } from '@bootkit/angular-pro/components/code';
+import { ExampleViewerModule } from './components/code-box';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CodeComponent } from '@bootkit/angular-pro/components/code';
     CommonModule,
     RouterModule,
     DocumentModule,
-    CodeComponent
+    CodeComponent,
+    ExampleViewerModule
   ],
   providers: [],
 })
