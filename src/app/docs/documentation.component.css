@@ -37,6 +37,15 @@
 
 .menu .item a {
     display: block;
+    width: fit-content;
+    padding: .1rem .4rem;
+    border-radius: .3rem;
+
+    &.active {
+        /* color: var(--bs-body) !important; */
+        background-color: rgb(250, 229, 247);
+        font-weight: 500;
+    }
 }
 
 .menu .item a:hover {

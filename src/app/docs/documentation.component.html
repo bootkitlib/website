@@ -5,8 +5,9 @@
         <h6 class="text-primary mb-0"> {{item.title}}</h6>
         <ul>
           <li *ngFor="let child of item.children">
-            <a [routerLink]="child.url" class="text-body text-decoration-none"
-               [routerLinkActive]="child.url ? 'font-weight-bold text-primary' : ''">
+            <a [routerLink]="child.url"
+               class="text-body text-decoration-none"
+               routerLinkActive="active">
               {{child.title}}
             </a>
           </li>
@@ -21,7 +22,7 @@
         <router-outlet></router-outlet>
       </div>
       <div class="col-md-3">
-        <app-document-toc  [document]="documentService.document()"></app-document-toc>
+        <app-document-toc [document]="documentService.document()"></app-document-toc>
       </div>
     </div>
   </div>

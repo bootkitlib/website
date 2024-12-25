@@ -4,10 +4,10 @@ export const SIDEBAR_ITEMS: MenuItem[] = [
   {
     title: 'Getting Started',
     children: [
-      {
-        title: 'Introduction',
-        url: ['bootkit', 'getting-started', 'introduction'],
-      },
+      // {
+      //   title: 'Introduction',
+      //   url: ['bootkit', 'getting-started', 'introduction'],
+      // },
       {
         title: 'Installation',
         url: ['bootkit', 'getting-started', 'installation'],

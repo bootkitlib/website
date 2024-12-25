@@ -4,6 +4,13 @@ import { TooltipDirective } from '@bootkit/angular/components/tooltip';
 import { CodeComponent } from '@bootkit/angular-pro/components/code';
 
 
+export interface Code {
+  code: string;
+  formatter: string;
+  title?: string;
+}
+
+
 @Component({
   selector: 'app-code-viewer',
   templateUrl: './code-viewer.component.html',

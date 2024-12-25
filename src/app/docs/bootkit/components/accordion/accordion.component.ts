@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AppCommonModule } from '@app/common';
 import { AccordionModule } from '@bootkit/angular/components/accordion';
+import { codes } from './codes';
 
 @Component({
   selector: 'app-bootkit-components-accordion',
@@ -12,4 +13,6 @@ import { AccordionModule } from '@bootkit/angular/components/accordion';
   ]
 })
 export class BootkitAccordionComponent {
+      codes = codes;
+  
 }

@@ -1,4 +1,68 @@
- <bk-accordion>
-    <bk-accordion-item header="Item 1"></bk-accordion-item>
-    <bk-accordion-item header="Item 2"></bk-accordion-item>
- </bk-accordion>
+<app-doc header="Accordion">
+   Build vertically collapsing accordions in combination with Collapse component.
+
+   <app-doc-section id="basic_usage" header="Basic Usage">
+      <app-example-viewer header="Basic Usage" [codes]="codes.simple">
+         <bk-accordion>
+            <bk-accordion-item header="Item 1">
+               Item 1 content.
+            </bk-accordion-item>
+
+            <bk-accordion-item header="Item 2">
+               Item 2 content.
+            </bk-accordion-item>
+
+            <bk-accordion-item header="Item 3">
+               Item 3 content.
+            </bk-accordion-item>
+         </bk-accordion>
+      </app-example-viewer>
+
+   </app-doc-section>
+
+
+   <app-doc-section id="flush" header="Flush">
+      Add .accordion-flush to bk-accordio component to remove some borders and rounded corners to render accordions edge-to-edge with their
+      parent container.
+
+      <app-example-viewer header="Flush" [codes]="codes.flush">
+         <bk-accordion class="accordion-flush">
+            <bk-accordion-item header="Item 1">
+               Item 1 content.
+            </bk-accordion-item>
+
+            <bk-accordion-item header="Item 2">
+               Item 2 content.
+            </bk-accordion-item>
+
+            <bk-accordion-item header="Item 3">
+               Item 3 content.
+            </bk-accordion-item>
+         </bk-accordion>
+      </app-example-viewer>
+
+   </app-doc-section>
+
+   <app-doc-section id="always_open" header="Always open">
+      Set <mark>mode="multiple"</mark> to allow multiple accordion items stay open.
+
+      <app-example-viewer header="Always open" [codes]="codes.alwaysOpen">
+         <bk-accordion mode="multiple">
+            <bk-accordion-item header="Item 1">
+               Item 1 content.
+            </bk-accordion-item>
+
+            <bk-accordion-item header="Item 2">
+               Item 2 content.
+            </bk-accordion-item>
+
+            <bk-accordion-item header="Item 3">
+               Item 3 content.
+            </bk-accordion-item>
+         </bk-accordion>
+      </app-example-viewer>
+
+   </app-doc-section>
+
+
+</app-doc>

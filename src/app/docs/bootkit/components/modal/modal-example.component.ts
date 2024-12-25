@@ -13,5 +13,5 @@ import { ModalModule } from '@bootkit/angular/components/modal';
   ]
 })
 export class ModalExampleComponent {
-  show = true;
+  show = false;
 }

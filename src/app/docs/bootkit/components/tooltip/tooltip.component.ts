@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AppCommonModule } from '@app/common';
 import { TooltipDirective } from '@bootkit/angular/components/tooltip';
-import { examples } from './codes';
+import { examples as codes } from './codes';
 
 @Component({
     selector: 'app-tooltip-example',
@@ -13,5 +13,6 @@ import { examples } from './codes';
     ]
 })
 export class TooltipExampleComponent {
-    examples = examples;
+    codes = codes;
 }
+ 
