@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { AppCommonModule } from '@app/common';
-import { CardComponent, CardModule } from '@bootkit/angular/components/card';
+// import { CardComponent, CardModule } from '@bootkit/angular/components/card';
 
 @Component({
   selector: 'app-bootkit-components-card',
@@ -9,7 +9,7 @@ import { CardComponent, CardModule } from '@bootkit/angular/components/card';
   standalone: true,
   imports: [
       AppCommonModule,
-      CardModule
+      // CardModule
   ]
 })
 export class CardExampleComponent {

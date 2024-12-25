@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ArchitectureDiagramComponent {
   bootstrapComponents = [
     { name: 'Accordion', url: 'accordion' },
-    { name: 'Card', url: 'card' },
+    { name: 'Card', url: '' },
     { name: 'Dropdown', url: 'dropdown' },
     { name: 'Tab', url: 'tab' },
     { name: 'Code', url: 'code' },

@@ -1,0 +1,5 @@
+@if(code() && formatter()) {
+  <bkp-code [formatter]="formatter()!" [code]="code()!"></bkp-code>
+}@else {
+  <ng-content></ng-content>
+}

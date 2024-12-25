@@ -5,7 +5,7 @@
         <h6 class="text-primary mb-0"> {{item.title}}</h6>
         <ul>
           <li *ngFor="let child of item.children">
-            <a [routerLink]="child.url" class="text-body"
+            <a [routerLink]="child.url" class="text-body text-decoration-none"
                [routerLinkActive]="child.url ? 'font-weight-bold text-primary' : ''">
               {{child.title}}
             </a>

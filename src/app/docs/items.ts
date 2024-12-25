@@ -9,7 +9,7 @@ export const SIDEBAR_ITEMS: MenuItem[] = [
         url: ['bootkit', 'getting-started', 'introduction'],
       },
       {
-        title: 'Install',
+        title: 'Installation',
         url: ['bootkit', 'getting-started', 'installation'],
       },      
       {
@@ -25,10 +25,10 @@ export const SIDEBAR_ITEMS: MenuItem[] = [
         title: 'Accordion',
         url: ['bootkit', 'components', 'accordion'],
       },         
-      {
-        title: 'Card',
-        url: ['bootkit', 'components', 'card'],
-      },
+      // {
+      //   title: 'Card',
+      //   url: ['bootkit', 'components', 'card'],
+      // },
       {
         title: 'Collapse',
         url: ['bootkit', 'components', 'collapse'],

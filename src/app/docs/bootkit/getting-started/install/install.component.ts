@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AppCommonModule } from '@app/common';
+import { codes } from './codes';
 
 @Component({
   selector: 'app-doc-getting-started-install',
@@ -8,4 +9,5 @@ import { AppCommonModule } from '@app/common';
   imports: [AppCommonModule]
 })
 export class InstallComponent {
+  codes = codes;
 }

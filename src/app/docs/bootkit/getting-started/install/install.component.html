@@ -1,22 +1,48 @@
-<app-doc header="Install">
-    Install &#64;bootkit/angular library using npm.
-    The library has a dependency on &#64;angular/cdk.
+<app-doc header="Installation">
+    <p>
+        The only required dependency is 
+        <a href="https://material.angular.io/cdk/categories" target="_blank">Angular CDK</a>. <br>
+        Install &#64;bootkit/angular and Angular CDK libraries via npm:
+    </p>
 
-    <bkp-code formatter="html" code="ng add @angular/cdk
-npm install @bootkit/angular">
-    </bkp-code>
+   
 
- 
-    <div class="alert alert-warning"  role="alert">
-        <h5 class="alert-heading">Note:</h5>
-        Bootkit has no dependency to Bootstrap.js, jQuery, Popper.js or any other javascript library. It's only JS dependency is &#64;angular/cdk.
+    <app-code-viewer>
+        ng add &#64;angular/cdk <br>
+        npm install &#64;bootkit/angular
+    </app-code-viewer>
+
+    <div class="alert alert-warning" role="alert">
+        <h5 class="alert-heading">Important:</h5>
+        Bootkit does not depend on Bootstrap.js, jQuery, Popper.js, or any other JavaScript library. Its only dependency
+        is
+        <a href="https://material.angular.io/cdk/categories" target="_blank">Angular CDK</a>.
+
+        <hr>
+        <p>
+            <i class="bi bi-info-circle-fill"></i>
+            The Angular CDK (Component Development Kit) is a library developed by Google that provides a set of tools
+            and utilities specifically designed for building and enhancing Angular component libraries.
+        </p>
     </div>
 
+    <app-doc-section id="css" header="Import CSS">
+        <p>
+            Import the CSS of Bootstrap and Angular CDK to your angular project. add following lines to the 
+            <mark>styles.scss</mark>  file in your
+            project.
+        </p>
 
-    <app-doc-section id="section" header="CSS">
-        Add the CSS of Bootstrap to your project.
+        <app-code-viewer [code]="codes.css" formatter="css">
+        </app-code-viewer>
+
     </app-doc-section>
 
+
+    <app-doc-section id="Supported_Browsers" header="Supported Browsers">
+        We aim to support the same browsers and versions as those supported by Bootstrap and Angular,
+        adhering to the more restrictive compatibility requirements between the two.
+    </app-doc-section>
 
 
 </app-doc>
