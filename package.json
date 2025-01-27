@@ -23,7 +23,7 @@
     "@angular/platform-server": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.0",
-    "@bootkit/angular": "^1.7.0",
+    "@bootkit/angular": "^1.9.2",
     "@bootkit/angular-pro": "^1.0.0-alpha.4",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
