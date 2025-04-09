@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="d-none d-sm-block col-md-2 sidebar border-right">
+    <div class="menu">
+      <div *ngFor="let item of SIDEBAR_ITEMS" class="item">
+        <h6 class="text-primary mb-0"> {{item.title}}</h6>
+        <ul>
+          <li *ngFor="let child of item.children">
+            <a [routerLink]="child.url"
+               class="text-body text-decoration-none"
+               routerLinkActive="active">
+              {{child.title}}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="col-md-10">
+    <div class="row">
+      <div class="col-md-9">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="col-md-3">
+        <app-document-toc [document]="documentService.document()"></app-document-toc>
+      </div>
+    </div>
+  </div>
+</div>
