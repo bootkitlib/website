@@ -1,6 +1,6 @@
 import { Component, AfterContentInit, computed } from '@angular/core';
 import { AppCommonModule, DocumentService } from '@app/common';
-import { SIDEBAR_ITEMS } from './items';
+import { SIDEBAR_ITEMS } from './menu-items';
 
 @Component({
   selector: 'app-documentation',

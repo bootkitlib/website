@@ -16,12 +16,7 @@ export default [
   },
   {
     path: 'components',
-    children: [
-      {
-        path: 'tabs',
-        loadChildren: () => import('./components/tabs/routes')
-      },
-    ]
+    loadChildren: () => import('./components/routes')
   },
 
 ] satisfies Route[];

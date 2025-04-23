@@ -1,0 +1,6 @@
+// @ts-nocheck
+
+for (let index = 0; index < [].asd; index++) {
+    const element = array; console.log(element);
+}
+sdrf
